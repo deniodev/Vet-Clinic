@@ -35,14 +35,12 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -53,10 +51,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
+# 📖 Vet Clinic <a name="about-project"></a>
 
 
-**[Vet Clinic]**  stores and manipulates data for a veterinary clinic. It encompasses tasks such as creating tables, querying and updating data, joining tables, conducting a database performance audit, and generating a database schema diagram.
+**Vet Clinic**  is designed to store and manipulate data for a veterinary clinic. It encompasses various functionalities such as creating tables, querying and updating data, joining tables, conducting a database performance audit, and generating a database schema diagram.
 
 ## 🛠 Built With <a name="built-with"></a>
 
