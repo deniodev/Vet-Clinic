@@ -68,3 +68,21 @@ CREATE TABLE visits(
 );
 
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+ALTER TABLE visits
+RENAME COLUMN date TO date_of_visit;
+
+CREATE TABLE visits_animal_4 AS
+SELECT *
+FROM visits
+WHERE animal_id = 4;
+
+CREATE TABLE visits_vet_2 AS
+SELECT *
+FROM visits
+WHERE vet_id = 2;
+
+CREATE TABLE owner_18327 AS
+SELECT *
+FROM owners
+WHERE email = 'owner_18327@mail.com';
