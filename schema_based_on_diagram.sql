@@ -45,3 +45,41 @@ CREATE TABLE treatments_medical_histories (
   PRIMARY KEY (medical_histories_id, treatments_id)  
 );
 
+ALTER TABLE medical_histories
+ADD CONSTRAINT fk_patient_id 
+FOREIGN KEY (patient_id)
+REFERENCES patients(id)
+ON DELETE CASCADE;
+
+ALTER TABLE treatments_medical_histories
+ADD CONSTRAINT fk_medical_histories_id  
+FOREIGN KEY (medical_histories_id)
+REFERENCES medical_histories(id)
+ON DELETE CASCADE;
+
+ALTER TABLE treatments_medical_histories
+ADD CONSTRAINT fk_treatments_id  
+FOREIGN KEY (treatments_id)
+REFERENCES treatments(id)
+ON DELETE CASCADE;
+
+ALTER TABLE invoice_items
+ADD CONSTRAINT fk_invoice_id
+FOREIGN KEY (invoice_id)
+REFERENCES invoices(id)
+ON DELETE CASCADE;
+
+ALTER TABLE invoice_items
+ADD CONSTRAINT fk_treatments_id 
+FOREIGN KEY (treatments_id )
+REFERENCES treatments(id)
+ON DELETE CASCADE;
+
+ALTER TABLE invoices
+ADD CONSTRAINT fk_medical_histories_id
+FOREIGN KEY (medical_histories_id )
+REFERENCES medical_histories(id)
+ON DELETE CASCADE;
+
+
+
