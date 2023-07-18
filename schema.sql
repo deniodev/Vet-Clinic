@@ -72,6 +72,6 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 ALTER TABLE visits
 RENAME COLUMN date TO date_of_visit;
 
-CREATE INDEX animals_index ON visits(animals_id);
-CREATE INDEX vets_index ON visits(vets_id);
+CREATE INDEX animals_index ON visits(animal_id);
+CREATE INDEX vets_index ON visits(vet_id);
 CREATE INDEX vets_index_asc ON owners(email ASC);
