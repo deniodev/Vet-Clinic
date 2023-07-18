@@ -81,5 +81,10 @@ FOREIGN KEY (medical_histories_id )
 REFERENCES medical_histories(id)
 ON DELETE CASCADE;
 
-
+CREATE INDEX patients_index ON medical_histories(patient_id);
+CREATE INDEX medical_history_invoices_index ON invoices(medical_history_id);
+CREATE INDEX invoices_index ON invoice_items(invoice_id);
+CREATE INDEX treatments_invoice_items_index ON invoice_items(treatment_id);
+CREATE INDEX medical_histories_index ON treatments_medical_histories(medical_histories_id);
+CREATE INDEX treatments_index ON treatments_medical_histories(treatments_id);
 
